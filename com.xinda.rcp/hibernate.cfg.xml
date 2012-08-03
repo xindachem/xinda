@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>
+  <property name="hibernate.connection.url">jdbc:hsqldb:file:C:/Documents and Settings/Administrator/My Documents/Dropbox/db/xinda;create=true;shutdown=true</property>
+  <property name="hibernate.connection.username">sa</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.transaction.flush_before_completion">true</property>
+  <property name="hibernate.transaction.auto_close_session">true</property>
+  <mapping class="com.xinda.rcp.model.Order"/>
+  <mapping class="com.xinda.rcp.model.Payment"/>
+  <mapping class="com.xinda.rcp.model.Invoice"/>
+  <mapping class="com.xinda.rcp.model.OrderItem"/>
+  <mapping class="com.xinda.rcp.model.Product"/>
+  <mapping class="com.xinda.rcp.model.Customer"/>
+  <mapping class="com.xinda.rcp.model.Book"/>
+  <mapping class="com.xinda.rcp.model.Folder"/>
+  <mapping class="com.xinda.rcp.model.PaymentType"/>
+ </session-factory>
+</hibernate-configuration>
